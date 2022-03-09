@@ -1,4 +1,4 @@
-import django_heroku
+import django_on_heroku
 import os
 from pathlib import Path
 from environ import environ
@@ -127,6 +127,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'todolist'
 LOGIN_URL = "login"
 
-django_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
 STSTIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
